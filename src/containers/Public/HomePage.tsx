@@ -21,8 +21,7 @@ const HomePage = () => {
       <div className="items-center justify-center flex flex-col">
         {!categories || categories.length === 0 ? (
           <div className="text-[21px] font-bold py-[50px] w-1/2 text-center">
-            Vì xài gói free nên cần thời gian khoảng 1p để khởi động server cho
-            request đầu tiên xin thông cảm!!!
+            Pls wait. It take about 1 minutes for Backend server to start...
           </div>
         ) : (
           <>
