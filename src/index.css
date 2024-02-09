@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.star-item {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+}
+
+.manage-account-zIndex {
+  z-index: 10000;
+}
+
+.limit-text-length {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.limit-text-title-length {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
