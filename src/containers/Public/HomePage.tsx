@@ -19,9 +19,20 @@ const HomePage = () => {
     <div className="w-full flex flex-col gap-3">
       <Search />
       <div className="items-center justify-center flex flex-col">
-        <HeaderText />
-        <p className="text-[14.5px] text-[#65676b]">{text.HOME_DESCRIPTION}</p>
-        <Provinces />
+        {!categories || categories.length === 0 ? (
+          <div className="text-[21px] font-bold py-[50px] w-1/2 text-center">
+            Vì xài gói free nên cần thời gian khoảng 1p để khởi động server cho
+            request đầu tiên xin thông cảm!!!
+          </div>
+        ) : (
+          <>
+            <HeaderText />
+            <p className="text-[14.5px] text-[#65676b]">
+              {text.HOME_DESCRIPTION}
+            </p>
+            <Provinces />
+          </>
+        )}
       </div>
       <div className="w-full flex gap-4">
         <div className="w-[70%]">
