@@ -1,12 +1,11 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
-import useCurrentUser from 'src/react-query/useCurrentUser';
-import * as actions from '../../store/actions/auth';
 import { Link, useLocation } from 'react-router-dom';
+import useCurrentUser from 'src/react-query/useCurrentUser';
 import { paths } from 'src/utils/constants';
 import icons from 'src/utils/icons';
+import * as actions from '../../store/actions/auth';
 
-const { AiOutlineLogout, ImPencil2, MdOutlineLibraryBooks } = icons;
+const { AiOutlineLogout, MdOutlineLibraryBooks } = icons;
 const SlideBar = () => {
   const { data: user } = useCurrentUser();
   const location = useLocation();
